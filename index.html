@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporio Hostal</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <!-- /*/////////*/
+    /*/////////////*/
+    /*/////////////*/
+    /*Inicio Section*/
+    /*///////////*/ -->
+
+    <section class="inicio-section">
+        <div class="logo-button">
+            <h1>Hostal Emporio</h1>
+            <p>Comodidad de Hogar</p>
+            <a href="https://wa.me/56934319086?text=%C2%A1Haz%20tu%20RESERVA%20por%20WhatsApp!" target="_blank">
+                <img src="img/svg/whatsapp.svg" width="30px" class="mr-2">
+                    <h4>Reservar Ahora</h4> </a>
+        </div>
+    </section>
+    
+
+
+    <!-- /*/////////////*/
+    /*/////////////*/
+    /*/////////////*/
+    /*Service Section*/
+    /*/////////////*/ -->
+
+
+
+    <section class="service-section">
+        <div class="services">
+            <ul>
+                <li><img src="img/svg/map.svg" alt="">Ubicación</li>
+                <li><img src="img/svg/clock.svg" alt="">Atencion 24/7</li>
+                <li><img src="img/svg/service.svg" alt="">Excelente Servicio</li>
+                <li><img src="img/svg/handshake.svg" alt="">Cordialidad</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- /*/////////////*/
+    /*/////////////*/
+    /*/////////////*/
+    /*Gallery Title*/
+    /*/////////////*/ -->
+
+    <section class="gallery-section">
+        <div class="gallery-title">
+            <h2>
+                Descúbrenos
+            </h2>
+        </div>
+
+    </section>
+
+    <!-- /*/////////////*/
+    /*/////////////*/
+    /*/////////////*/
+    /*Carrusel img*/
+    /*/////////////*/ -->
+
+    <section class="container">
+        <div class="showSlider fade">
+        <img src="img/fotos/1.jpg" alt= "Entering Library"/>
+        <div class="contentBook">Entrada</div>
+        </div>
+        <div class="showSlider fade">
+        <img src="img/fotos/2.jpg" alt = "Select Book"/>
+        <div class="contentBook">Comedor</div>
+        </div>
+        <div class="showSlider fade">
+        <img src="img/fotos/3.jpg" alt="Registering ID"/>
+        <div class="contentBook">Sanitario</div>
+        </div>
+        <div class="showSlider fade">
+        <img src="img/fotos/4.jpg" alt= "Returning Book"/>
+        <div class="contentBook">Habitaciòn</div>
+        </div>
+        <!-- Navigation arrows -->
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a>
+    </section>
+
+        <script src="js/script.js"></script>
+
+    
+    <!-- /*/////////////*/
+    /*/////////////*/
+    /*/////////////*/
+    /*Contact Section*/
+    /*/////////////*/ -->
+
+    <section class="contact-section">
+   
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d833.5442108292249!2d-71.4088918!3d-33.3141919!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96626f1b0c9064f9%3A0x730c574a7e82db2f!2sHostal%20Emporio!5e0!3m2!1ses-419!2sbo!4v1704950420172!5m2!1ses-419!2sbo" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact">
+               <ul>
+                   <li><h1>Contacto:</h1>
+                        <hr>
+                      <p><strong>Email:</strong> hostalemporio@gmail.com</p>
+                      <p><strong>Telefono:</strong>+56934319086</p>
+                      <p><strong>Direcciòn:</strong> C. Caupolicán, 2340000 Casablanca, Valparaíso, Chile</p>
+                    </li>
+              </ul>
+            </div>
+
+            <div class="qrcode">
+                <img src="img/qr.png" width="200" alt="">
+            </div>
+        
+    </section>
+
+
+
+    <!-- /*/////////////*/
+    /*/////////////*/
+    /*/////////////*/
+    /*Audio Section*/
+    /*/////////////*/ -->
+
+    <section class="audio">
+        <div class="player">
+            <button id="playButton" onclick="toggleAudio()">Pausar</button>
+            <audio id="audioPlayer" src="sound/Music_Menu.ogg" onended="repeatAudio()"></audio>
+            
+            <script src="js/sound.js"></script>
+
+        </div>
+
+    </section>
+    
+</body>
+</html>
